@@ -1,5 +1,5 @@
 import { createRoot } from 'react-dom/client';
-import UserSearch from './state/UserSearch';
+import { UserSearch } from './classes/UserSearch';
 
 function App() {
     return <UserSearch/>
