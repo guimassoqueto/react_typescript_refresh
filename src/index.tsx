@@ -1,8 +1,8 @@
 import { createRoot } from 'react-dom/client';
-import { UserSearch } from './classes/UserSearch';
+import Refs from './refs/Refs';
 
 function App() {
-    return <UserSearch/>
+    return <Refs/>
 }
 
 const container = document.getElementById('root')!;
