@@ -1,13 +1,17 @@
+import React from 'react';
+
 interface IChildProps {
     color: string;
+    onClick: () => void;
+    children: string;
 }
 
-function Child(props: IChildProps) {
-    const { color } = props;
-
-    return (
-        <div>{ color }</div>
-    )
+const ChildBasic = ({ color }: IChildProps) => {
+    return <h1>Child Basic</h1>
 }
 
-export { Child }
+const ChildFC: React.FC<IChildProps> = ({ color, onClick, children }) => {
+    return <button onClick={ onClick }>{ children }</button>
+}
+
+export { ChildBasic, ChildFC }

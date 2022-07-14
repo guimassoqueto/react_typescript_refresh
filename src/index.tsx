@@ -1,8 +1,10 @@
-import ReactDOM from 'react-dom';
-import Parent from './props/Parent';
+import { createRoot } from 'react-dom/client';
+import UserSearch from './state/UserSearch';
 
 function App() {
-    return <Parent/>
+    return <UserSearch/>
 }
 
-ReactDOM.render(<App/>, document.querySelector('#root'));
+const container = document.getElementById('root')!;
+const root = createRoot(container);
+root.render(<App />);
